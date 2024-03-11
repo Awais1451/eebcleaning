@@ -1,0 +1,164 @@
+/* ############################# Home Page ############################ */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* Positioned Search Container of Banner 1 */
+
+    .search__container {
+        width: 77%;
+        margin-top: 2rem;
+    }
+
+    .search__button {
+        right: 4%;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+   
+.search__container {
+        width: 70%;
+        margin-top: 2rem;
+    }
+
+    .search__button {
+        right: 41%;
+        bottom: -60px;
+    }
+
+    .location__input {
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 525px) and (max-width: 786px) {
+   
+    /* Positioned Search Container of Banner 1 */
+
+    .search__container {
+        width: 70%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .search__input {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .location__input {
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 20px;
+    }
+
+    .location__icon {
+        left: 9%;
+        bottom: 23px;
+    }
+
+    .search__button {
+        right: 38%;
+        bottom: -60px;
+    }
+
+    .location__input {
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 525px) {
+
+
+    /* Positioned Search Container of Banner 1 */
+
+    .search__container {
+        width: 94%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .search__input {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .location__input {
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 20px;
+    }
+
+    .location__icon {
+        left: 9%;
+        bottom: 23px;
+    }
+
+    .search__button {
+        right: 27%;
+        bottom: -60px;
+    }
+
+    .location__input {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+
+    /* Background Image 1 */
+
+    .index__bg__img {
+        top: -50px;
+    }
+
+    /* Positioned Search Container of Banner 1 */
+
+    .search__container {
+        width: 94%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .search__input {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .location__input {
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 20px;
+    }
+
+    .location__icon {
+        left: 9%;
+        bottom: 23px;
+    }
+
+    .search__button {
+        right: 27%;
+        bottom: -60px;
+    }
+
+    .location__input {
+        margin-right: 0;
+    }
+
+}
+
+/* ----Footer-- */
+@media (min-width: 320px) and (max-width: 515px) {
+    .index__bg__img {
+        top: -140px;
+    }
+}
+

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+    background-color: #161817;
+}
+
+
+/* -------------------------- HEADER Start -------------------------- */
+
+.hero__img {
+    background-image: url('../img/Artboard\ 2\ 2.png');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* Background Image */
+
+.index__bg__img {
+    background-image: url(../img/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    object-fit: cover;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    top: 0;
+}
+ 
+
+/* -------------------------- HEADER End -------------------------- */
+
+/* -------------------------- MAIN --------------------------  */
+
+/* ---------- Banner 1 Start ---------- */
+
+.banner__1 {
+    position: relative;
+    z-index: 1;
+}
+
+/* -------Banner 1 Row ------- */
+
+/* --- Left column --- */
+
+/* logo */
+
+.main__logo img {
+    width: 200px;
+}
+
+/* content */
+
+.banner__1__content h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color:#9b9c9b;
+    position: relative;
+    z-index: 1;
+}
+
+.banner__1__content h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 69px;
+    /* color: var(--color-10); */
+    color: FC467D;
+    background: radial-gradient(circle at bottom center, #18BEF0 36%, #00349A 56%, #4BABD1 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* button */
+
+.banner__button {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: white;
+    background-color: #20BFF1;
+    padding: 15px 28px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #20BFF1;
+    transition: all .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.banner__button:hover {
+    color: black;
+    background-color: blue !important;
+    border: 1px solid blue!important;
+}
+
+/* --- Right Column --- */
+
+/* image */
+
+.carousel__img {
+    height: 700px !important;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: -1px 1px 22px #375559;
+}
+
+/* Positioned Search Container of Banner 1 */
+
+.search__container {
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    margin-top: -16rem;
+}
+
+.search__input {
+    width: 50%;
+    height: 30px;
+    padding: 30px 50px;
+    border: 1px solid #b9bab9;
+    opacity: 0.8;
+    background-color: #1e201f;
+    border-radius: 20px 0 0 20px;
+}
+
+.search__input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: #e1e2e2;
+}
+
+.location__input {
+    width: 51%;
+    height: 30px;
+    padding: 30px 87px;
+    border: 1px solid #b9bab9;
+    background-color: #1e201f;
+    opacity: 0.8;
+    border-radius: 0 20px 20px 0;
+    margin-right: 23px;
+    position: relative;
+}
+
+.location__input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: #e1e2e2 !important;
+}
+
+.location__icon {
+    position: absolute;
+    left: 53%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #e5e5e4 ;
+    z-index: 1;
+}
+
+.location__icon i {
+    color: #e5e5e4 !important;
+}
+
+.search__button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    background: #20BFF1;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.search__button:hover {
+    color: white;
+    background: darkcyan;
+
+}
+
+.search__input,
+.location__input {
+    color: #e1e2e2;
+}
+
+
+/* ---------- Banner 1 End ---------- */
+.main-section2{
+    background-color: #1e201f;
+}
+.LANDING{
+    color: white;
+    font-size: 30px;
+    
+}
+.EEB_TEXT{
+    color: #20BFF1;
+}
