@@ -31,6 +31,9 @@ body {
 
 /* -------------------------- HEADER Start -------------------------- */
 
+.nav-link:hover{
+    color: white;
+}
 .hero__img {
     background-image: url('../img/Artboard\ 2\ 2.png');
     background-size: cover;
