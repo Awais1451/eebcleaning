@@ -55,25 +55,32 @@ body {
     align-items: center;
 }  
 .service h1{
-    font-size: 50px;
-    font-weight: 700;
-    color: #FFFFFF;
-    line-height: 69px;
-    letter-spacing: 10%;
-}
+    font-family: Futura Md BT;
+font-size: 45px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.1em;
+color: #FFFFFFDE;
+text-align: left;
+} 
 .para{
-    font-size: 18px;
+    font-family: Futura Md BT;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #c3c3c3;
+    color: #FFFFFF91;
+    
 }
 .head-section{
-    font-size: 40px;
+    font-family: Futura Md BT;
+    font-size: 38px;
     font-weight: 400;
-    line-height: 64px;
+    line-height: 40px;
     letter-spacing: 0.1em;
+    text-align: left;  
+    color: #FFFFFFDE;  
 }
 .btn-overlay{
     position: absolute;
