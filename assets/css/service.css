@@ -12,6 +12,10 @@
     
 }
 @font-face {
+
+    font-family: "Futura HV BT", sans-serif ;
+    src: url(../fonts/FutuHv.ttf) ;
+
     font-family: 'Futura Md BT';
     src: url('../Futura-Md-BT-Font/FutuBd.ttf') format('ttf'),
         url('../Futura-Md-BT-Font/FutuBdIt.ttf') format('ttf'),
@@ -32,6 +36,7 @@
         url('../Futura-Hv-BT/FuturaHeavyBT.ttf') format('ttf'),
         url('../Futura-Hv-BT/FuturaHeavyItalicBT.ttf') format('ttf'),
         url('../Futura-Hv-BT/futurahi.ttf') format('ttf'),
+
 
 
 }
@@ -75,6 +80,7 @@
     height: 100vh;
     
   }
+
   
   /* Style for the gradient mask */
   .top-section::before {
@@ -99,7 +105,6 @@
     color: var(--secondary-color);
     font-family: "Futura HV BT", sans-serif ;
   }
-
 
 /* Style for the top section */
 .top-sectionwall {
@@ -137,6 +142,7 @@
     color: var(--secondary-color);
     font-family: "Futura HV BT", sans-serif ;
   }
+
   .most-popular-section{
     background-color: var(--primary-bg-color);
   }
@@ -203,6 +209,7 @@
 
 .my-custom-card-below{
     background-color: var(--primary-bg-color) !important;
+
 }
 
 .belowCards-overlay-btn{
@@ -221,6 +228,64 @@
 .below-cards-small{
     font-weight: 600;
 }
+
+ 
+
+/* *****************service page styling ******************** */
+
+
+.ecological-top-section{
+    position: relative;
+    background-image: url(../img/eco-main.png);
+    background-position: 84%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+  /* Style for the gradient mask */
+  .ecological-top-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+    pointer-events: none; 
+
+  }
+  .ecological-second-section{
+    background-color: var(--secondary-bg-color);
+  }
+  .seeAll{
+    margin-bottom: 2rem;
+  }
+  
+  .seeall-btn{
+    padding-inline: 30px;
+    padding-block: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #20bff1;
+    color: #fff;
+    
+
+  }
+  .eco-popular-categories-section{
+    background-color: var(--primary-bg-color);
+  }
+  .eco-custom-card-below{
+    background-color: var(--secondary-bg-color);
+  }
+
+  .hardworking-sec{
+    background-color: var(--secondary-bg-color);
+  }
+
 .my-card-img{
 filter: brightness(70%);
 -webkit-filter: brightness(70%);
