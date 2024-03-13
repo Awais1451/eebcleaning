@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../Futura-Md-BT-Font/FutuBd.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FutuBdIt.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FutuMd.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FutuMdIt.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaBoldBT.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaBoldItalicBT.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaMediumBT.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaMediumItalicBT.ttf') format('ttf'),
+
+        /* Add more src declarations for other font formats if necessary */
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('../Futura-Hv-BT/FutuHv.ttf') format('ttf'),
+        url('../Futura-Hv-BT/FutuHvIt.ttf') format('ttf'),
+        url('../Futura-Hv-BT/FuturaHeavyBT.ttf') format('ttf'),
+        url('../Futura-Hv-BT/FuturaHeavyItalicBT.ttf') format('ttf'),
+        url('../Futura-Hv-BT/futurahi.ttf') format('ttf'),
+
+
+}
+.bg-header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/Rectangle\ 4.png') no-repeat center;;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.nav-text a{
+    font-family: Futura;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 10%;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 1;
+} 
+body {
+    background-color: #161817;
+
+}
+.service{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}  
+.service h1{
+    font-family: Futura Md BT;
+font-size: 45px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.1em;
+color: #FFFFFFDE;
+text-align: left;
+} 
+.para{
+    font-family: Futura Md BT;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF91;
+    
+}
+.head-section{
+    font-family: Futura Md BT;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-align: left;  
+    color: #FFFFFFDE;  
+}
+.btn-overlay{
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: center; 
+}
+@media (max-width:576px){
+    .head-section{
+        font-size: 33px;
+    }
+    .bg-header{
+        height: 70vh;
+    }
+    .service{
+        height: 50vh;
+    }
+    .btn-overlay{
+        left: 30%;
+    }
+
+}
+

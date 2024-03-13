@@ -1,11 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../Futura-Md-BT-Font/FutuBd.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FutuBdIt.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FutuMd.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FutuMdIt.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaBoldBT.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaBoldItalicBT.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaMediumBT.ttf') format('ttf'),
+        url('../Futura-Md-BT-Font/FuturaMediumItalicBT.ttf') format('ttf'),
 
-* {
-    font-family: 'Montserrat', sans-serif !important;
+        /* Add more src declarations for other font formats if necessary */
+}
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('../Futura-Hv-BT/FutuHv.ttf') format('ttf'),
+        url('../Futura-Hv-BT/FutuHvIt.ttf') format('ttf'),
+        url('../Futura-Hv-BT/FuturaHeavyBT.ttf') format('ttf'),
+        url('../Futura-Hv-BT/FuturaHeavyItalicBT.ttf') format('ttf'),
+        url('../Futura-Hv-BT/futurahi.ttf') format('ttf'),
+
+
 }
 
 body {
     background-color: #161817;
+
 }
 
 
@@ -36,7 +56,7 @@ body {
     height: 83%;
     top: 0;
 }
- 
+
 
 /* -------------------------- HEADER End -------------------------- */
 
@@ -64,20 +84,21 @@ body {
 .banner__1__content h6 {
     font-size: 16px;
     font-weight: 400;
+    font-family: Futura Hv BT;
     line-height: 19px;
     letter-spacing: 0.1em;
-    color:#9b9c9b;
+    color: #9b9c9b;
     position: relative;
     z-index: 1;
 }
 
 .banner__1__content h1 {
-    font-weight: 700;
+    font-family: Futura Hv BT;
     font-size: 50px;
+    font-weight: 700;
     line-height: 69px;
-    /* color: var(--color-10); */
-    color: FC467D;
-    background: radial-gradient(circle at bottom center, #18BEF0 36%, #00349A 56%, #4BABD1 76%);
+    line-height: 69px;
+    background: linear-gradient(180deg, #FC467D -48.19%, #20BFF1 82.61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -89,6 +110,7 @@ body {
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.05em;
+    font-family: Futura Md BT;
     color: white;
     background-color: #20BFF1;
     padding: 15px 28px;
@@ -100,11 +122,6 @@ body {
     z-index: 1;
 }
 
-.banner__button:hover {
-    color: black;
-    background-color: blue !important;
-    border: 1px solid blue!important;
-}
 
 /* --- Right Column --- */
 
@@ -121,8 +138,9 @@ body {
     width: 100%;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: -1px 1px 22px #375559;
+    /* box-shadow: -1px 1px 22px #375559; */
 }
+
 
 /* Positioned Search Container of Banner 1 */
 
@@ -167,6 +185,7 @@ body {
 .location__input::placeholder {
     font-weight: 400;
     font-size: 18px;
+    font-family: Futura Md BT;
     color: #e1e2e2 !important;
 }
 
@@ -175,7 +194,7 @@ body {
     left: 53%;
     font-weight: 400;
     font-size: 18px;
-    color: #e5e5e4 ;
+    color: #e5e5e4;
     z-index: 1;
 }
 
@@ -198,11 +217,7 @@ body {
     transition: all .3s ease-in-out;
 }
 
-.search__button:hover {
-    color: white;
-    background: darkcyan;
 
-}
 
 .search__input,
 .location__input {
@@ -211,14 +226,402 @@ body {
 
 
 /* ---------- Banner 1 End ---------- */
-.main-section2{
+.main-section2 {
     background-color: #1e201f;
 }
-.LANDING{
+
+.LANDING {
     color: white;
+    font-family: Futura Hv BT;
     font-size: 30px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+
+
+}
+
+.EEB_TEXT {
+    color: #20BFF1;
+}
+
+.PAraEEB {
+    color: #9e9f9f;
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+
+
+}
+
+.IMAGRSD {
+    background: #20BFF1;
+    width: 20%;
+    /* padding-right: 40px; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.BGCOLOR {
+    background-color: #161817;
+}
+
+.FEATURED {
+    font-family: Futura Hv BT;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.NEESTEXT {
+    font-family: Futura Md BT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.SEction_3_text {
+    font-family: Futura Md BT;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.image-container {
+    background-image: url('../img/first.png');
+    /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 50vh;
+    /* Ensures the background covers the entire viewport */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mask-container {
+    background-image: url('../img/Group\ 65.png');
+    /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 50vh;
+    /* Ensures the background covers the entire viewport */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlaed {
+    background-image: url('../img/thirdrde.png');
+    /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 50vh;
+    /* Ensures the background covers the entire viewport */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Section2rd {
+    background-image: url('../img/seoch2.png');
+    /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 50vh;
+    /* Ensures the background covers the entire viewport */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3rd {
+    background-image: url('../img/snd3.png');
+    /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 50vh;
+    /* Ensures the background covers the entire viewport */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4rd {
+    background-image: url('../img/snd4.png');
+    /* Replace 'your-image.jpg' with your image file */
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 50vh;
+    /* Ensures the background covers the entire viewport */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.feature_card {
+    border-radius: 12px;
+    position: relative;
+    height: 290px;
+}
+
+.feature_card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.500); */
+}
+
+.feature_card:hover:before {
+    border-radius: 12px;
+    background-color: rgba(175, 54, 129, 0.479);
+}
+.BBTNTEXXT {
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 10px;
+    letter-spacing: 0.1em;
+    color: #FFFFFFDE;
+}
+
+/* Add any other styles for child elements here */
+
+.nav-text a{
+    font-family: Futura Md BT;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 10%;
+    line-height: 24px;
+    color: #FFFFFF;
     
 }
-.EEB_TEXT{
-    color: #20BFF1;
+.card {
+    border: none !important;
+    background-color: #1e201f !important;
+    border-radius: 12px !important;
+    height: 100% !important;
+}
+
+.Text-rd {
+    font-family: Futura Hv BT;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.container-bgimg {
+    background-color: #1e201f;
+}
+
+/* .h-nav{
+    height: 40px;
+}
+.bg-head{
+    background-color: #20BFF1 !important;  
+    
+}
+.bg-grey{
+    background-color: #20BFF1 !important;
+
+}
+.line{
+    border-bottom: 3px solid gray;
+}
+.btn-service{
+    background-color: #20BFF1;
+}
+.section-footer{
+    background-color: #161817;
+} */
+.footerText {
+    font-family: Futura Md BT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFFDE;
+}
+
+.footer-para {
+    font-family: Futura;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #FFFFFFDE;
+}
+
+.favtextT {
+    color: #FFFFFF91;
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+}
+
+.main-baner4 {
+    background-image: url('../img/Group\ 61.png');
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+.bannersection4 h3 {
+    font-family: Futura Md BT;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.25em;
+    text-align: center;
+    color: #FFFFFFDE;
+}
+
+.BTNbanner {
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+}
+
+.Banersec3 {
+    font-family: Futura Md BT;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFDE;
+    
+}
+
+.icon_styling {
+    width: 20%;
+}
+
+.icon_styling img {
+    width: 40px;
+}
+
+/* row 1 left column row 1 */
+
+.communicat_with_us {
+    display: flex;
+}
+
+.communicat_with_us a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #18BEF0;
+    ;
+    cursor: pointer;
+    height: 110px;
+}
+
+.communicat_with_us a:hover {
+    background: #B21490;
+    color: rgba(255, 255, 255, 0.87);
+    transition: 0.3s;
+}
+
+.contact_us_card {
+    background: #1E201F;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact_card_title {
+    font-family: Futura  Hv BT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color:#FFFFFFDE ;  
+}
+
+.Contact_card_text {
+    font-family: Futura;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+   color:#FFFFFFDE ;
+    
+}
+
+/* Category-section start */
+.Category-section{
+    background-image: url('../img/categorymain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 100vh !important;
+}
+.Category-section2{
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+.catory-heading{
+    font-family: Futura Md BT;
+font-size: 45px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFFDE;
+}
+.IMG-ovrlod{
+    margin-top: -5.5rem !important;
+    margin-bottom: 3rem;
+}
+.Catogry-para{
+    color: #FFFFFF91;
+    font-family: Futura Md BT;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.1em;
+}
+.my-card-custom{
+    background-color: #161817 !important;
+}
+.Category-section2{
+    height: 60%;
 }
