@@ -127,6 +127,39 @@
   height: 100vh;
   
 }
+.top-sectforelace {
+  position: relative;
+  background-image: url('../img/forelacemain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectresidental {
+  position: relative;
+  background-image: url('../img/residentalmain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectecology {
+  position: relative;
+  background-image: url('../img/ecologymain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
 .top-sectsenitization {
   position: relative;
   background-image: url('../img/senitization.png');
@@ -245,7 +278,9 @@
     background-color: var(--primary-color);
     color: #fff;  
 }
-
+.my-card-agained{
+  background-color: #161817 !important;
+}
 .quote-section{
     background-image: url(../img/qoutesecmask.png);
     background-position: center;

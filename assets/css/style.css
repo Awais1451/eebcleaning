@@ -268,7 +268,7 @@ body {
 }
 
 .BGCOLOR {
-    background-color: #161817;
+    background-color: #161817 !important;
 }
 
 .FEATURED {
