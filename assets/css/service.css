@@ -107,6 +107,73 @@
   }
 
 /* Style for the top section */
+.card {
+  border: none !important;
+  background-color: #1e201f !important;
+  border-radius: 12px !important;
+  height: 100% !important;
+}
+.extrapaded{
+  padding-bottom: 2.6rem ;
+}
+.top-sectcomer {
+  position: relative;
+  background-image: url('../img/comercl.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectsenitization {
+  position: relative;
+  background-image: url('../img/senitization.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-secthoder {
+  position: relative;
+  background-image: url('../img/hodermain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+/* Style for the top section */
+.top-sectioned {
+    position: relative;
+    background-image: url('../img/mainoffice.png');
+    background-position: 84%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+  }
+    
+
+  .top-heading{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 1;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-family: "Futura HV BT", sans-serif ;
+  }
+
+/* Style for the top section */
 .top-sectionwall {
     position: relative;
     background-image: url(../img/wallsec1.png);
@@ -301,10 +368,117 @@ color: #FFFFFFDE;
 }
 .wallpara{
     font-family: Futura Md BT;
-font-size: 16px;
+font-size: 14px;
 font-weight: 400;
-line-height: 22px;
-letter-spacing: 0.1em;
+line-height: 18px;
 text-align: left;
 color: #FFFFFF91;
+}
+
+
+
+/***** quotes section *****/
+.quotes-section {
+  color: white;
+  background-image:   url('../img/qoutesecmask.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  padding-block: 100px;
+  .quotes-img {
+    height: 50px;
+  }
+  .quotes-container h1{
+    font-family: Futura Hv BT;
+font-size: 40px;
+font-style: italic;
+font-weight: 400;
+line-height: 40px;
+text-align: center;
+color: #20BFF1;
+  }
+  .Quotespara{
+color: #FFFFFFDE;
+font-family: Futura Hv BT;
+font-size: 40px;
+font-style: italic;
+font-weight: 400;
+line-height: 50px;
+text-align: center;
+
+  }
+  .quotes-sub-container {
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+  }
+  .quotes-sub-container::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 0%;
+    height: 3.5px;
+    width: 43%;
+    background-color: rgba(32, 191, 241, 1);
+  }
+  .quotes-sub-container::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 0%;
+    height: 3.5px;
+    width: 43%;
+    background-color: rgba(32, 191, 241, 1);
+  }
+  
+  .line-display {
+    width: 100%;
+    height: 3.5px;
+    background-color: rgba(32, 191, 241, 1);
+    opacity: 1;
+    border: none;
+  }
+}
+
+/***** End quotes section *****/
+
+
+
+/***** service section *****/
+.service-container-row .slick-prev {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  left: 91%;
+}
+.service-container-row .slick-next {
+  position: absolute;
+  top: -19px;
+  right: 4%;
+}
+.service-container-row .slick-list {
+  /* margin-top: 30px; */
+}
+
+/***** End service section *****/
+@media (width<1200px) {
+  .service-container-row .slick-prev {
+    left: 89%;
+  }
+}
+@media (width<768px) {
+  .service-container-row .slick-prev {
+    left: 88%;
+  }
+}
+@media (width<576px) {
+  .service-container-row .slick-prev {
+    left: 86%;
+  }
+}
+@media (width<420px) {
+  .service-container-row .slick-prev {
+    left: 82%;
+  }
 }
