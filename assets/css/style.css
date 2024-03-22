@@ -22,6 +22,7 @@
 
 
 }
+ 
 
 body {
     background-color: #161817;
@@ -33,6 +34,14 @@ body {
 
 .nav-link:hover{
     color: white;
+}
+.my-nav{
+    z-index: 3000 !important;
+}
+@media (max-width:992px){
+    .my-nav{
+        background: #1e201f;
+    }
 }
 .hero__img {
     background-image: url('../img/Artboard\ 2\ 2.png');
@@ -220,11 +229,16 @@ body {
     transition: all .3s ease-in-out;
 }
 
-
+.Hrlined{
+    border: 1px solid #D3D3D3;
+}
 
 .search__input,
 .location__input {
     color: #e1e2e2;
+}
+.BTNMrgin{
+    margin-top: -4px !important;
 }
 
 
@@ -251,11 +265,11 @@ body {
 .PAraEEB {
     color: #9e9f9f;
     font-family: Futura Md BT;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0.1em;
-
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: left;    
 
 }
 
@@ -268,7 +282,7 @@ body {
 }
 
 .BGCOLOR {
-    background-color: #161817;
+    background-color: #161817 !important;
 }
 
 .FEATURED {
@@ -312,7 +326,27 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.Matrl{
+    width: 50%;
+}
+@media(max-width:340px){
+    .Matrl{
+        width: auto;
+    }
+    .magrind{
+        margin-bottom: 30px;
+    }
+}
+.nav-text a{
+    font-family: Futura;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 10%;
+    line-height: 24px;
+    color: #a3a6a7;
+    background: transparent !important;  
+}
 .mask-container {
     background-image: url('../img/Group\ 65.png');
     /* Replace 'your-image.jpg' with your image file */
@@ -405,6 +439,15 @@ body {
     border-radius: 12px;
     background-color: rgba(175, 54, 129, 0.479);
 }
+.QbtnNa{
+    font-family: Futura Md BT;
+font-size: 16px;
+font-weight: 400;
+/* letter-spacing: 10%; */
+line-height: 20px;
+text-align: left;
+color: white;
+}
 .BBTNTEXXT {
     font-family: Futura Md BT;
     font-size: 14px;
@@ -413,20 +456,11 @@ body {
     padding: 10px;
     letter-spacing: 0.1em;
     color: #FFFFFFDE;
+    border-radius: 10px;
 }
 
 /* Add any other styles for child elements here */
 
-.nav-text a{
-    font-family: Futura Md BT;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 10%;
-    line-height: 24px;
-    color: #FFFFFF;
-    
-}
 .card {
     border: none !important;
     background-color: #1e201f !important;
@@ -455,7 +489,7 @@ body {
     background-color: #20BFF1 !important;  
     
 }
-.bg-grey{
+.bg-uperspace{
     background-color: #20BFF1 !important;
 
 }
@@ -551,7 +585,13 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #18BEF0;
-    ;
+    cursor: pointer;
+    height: 110px;
+}
+.communicat_contact a {
+    text-decoration: none;
+    color: #000000DE;
+    background-color: white;
     cursor: pointer;
     height: 110px;
 }
@@ -586,6 +626,26 @@ body {
    color:#FFFFFFDE ;
     
 }
+.PNgicons{
+    background-color:#18BEF0 ;
+    border-radius: 10px;
+}
+.contact_card_Title {
+    font-family: Futura  Hv BT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color:#000000DE ;  
+}
+
+.Contact_card_Text {
+    font-family: Futura;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+   color:#000000DE ;
+    
+}
 
 /* Category-section start */
 .Category-section{
@@ -614,6 +674,12 @@ color: #FFFFFFDE;
     margin-top: -5.5rem !important;
     margin-bottom: 3rem;
 }
+@media (max-width:350px){
+    .IMG-ovrlod{
+        margin-top: -5.5rem !important;
+        margin-bottom: 1rem;
+    }
+}
 .Catogry-para{
     color: #FFFFFF91;
     font-family: Futura Md BT;
@@ -641,6 +707,7 @@ line-height: 30px;
 text-align: center;
 color: #FFFFFFDE;
 }
+
 
 /* sign in page style  */
 
@@ -839,4 +906,144 @@ color: #FFFFFFDE;
 }
 .just-remeber-text a{
     font-weight: 600;
+=======
+/* profile page css */
+
+.bagcolor{
+    background-color:#1E201F !important;
+}
+.bg-header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/profile-bg.png') no-repeat center;;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.profile{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}  
+.profile h1{
+    font-family: Futura Hv BT;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFFDE;
+    line-height: 69px;
+    letter-spacing: 10%;
+}
+.profile-img{
+    position: absolute;
+    top: -100%;
+    left: 38%;
+}
+.profile-icon{
+    position: absolute;
+    top: 73%;
+    left:76%;
+    font-size: 24px;
+    background: #9947E280;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+.input-icon{
+    position: absolute;
+    top: 58%;
+    left: 92%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 10px;
+}
+.form-head{
+    font-family: Futura Hv BT;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFDE;
+
+}
+.form-label{
+    font-family: Futura Md BT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFFDE;
+}
+.formed input{
+    background-color: #000000 !important;
+}
+.form input::placeholder{
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF91;
+}
+.formed input{
+    /* background-color: #000000 !important; */
+}
+.formed textarea::placeholder, .formed input::placeholder{
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF91;
+}
+
+#dob{
+    color: #FFFFFF91;
+}
+.birth:hover{
+   /* display: none; */
+}
+.form-select{
+    background-color: #000000;
+    color:#FFFFFF91;
+}
+.form-text{
+    font-family: Futura Md BT;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF91;
+}
+@media(max-width:768px){
+    .profile-img{
+        left: 27%;
+    }
+}
+@media(max-width:500px){
+    .profile-img{
+        left: 20%;
+    }
+}
+@media(max-width:400px){
+    .bg-header{
+        height: 80vh;
+    }
+    .profile{
+        height: 60vh;
+    }
+    .profile-img img{
+        width: 160px;
+    }
+    .profile-img{
+        left: 21%;
+        top: -87%;
+    }
+    .input-icon{
+        left: 85%;
+    }
 }

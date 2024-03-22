@@ -34,7 +34,14 @@
     background-position: center;
     height: 100vh;
 }
-
+.revie-contner{
+    background-image: url('../img/reviewmain.png');
+    width: 100%;
+    height: 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .nav-text a{
     font-family: Futura;
     text-transform: uppercase;
@@ -65,9 +72,9 @@ text-align: left;
 } 
 .para{
     font-family: Futura Md BT;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 18px;
     letter-spacing: 0.1em;
     text-align: left;
     color: #FFFFFF91;
@@ -108,3 +115,33 @@ text-align: left;
 
 }
 
+.paginat {
+    background-color: #161817 !important;
+    text-decoration: none;
+     color: #737373;
+}
+.backhjground{
+    background-color: #1e201f !important;
+}
+.bg-uperspace{
+   background-color:  #161817;
+   padding-block: 20px ;
+}
+.page-item{
+   
+    padding: 10px;
+    padding-inline: 20px;
+    background-color: #1e201f;
+    border-radius: 5px;
+    margin-inline: 5px;
+}
+.linedh{
+    background-color: black !important;
+    color: black;
+    height: 3px;
+}
+@media(max-width:368px){
+    .page-item{
+        margin-inline: 1px;
+    }
+}

@@ -127,6 +127,83 @@
   height: 100vh;
   
 }
+.top-sectstorage {
+  position: relative;
+  background-image: url('../img/storagemain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectContact {
+  position: relative;
+  background-image: url('../img/contact-main.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectaboutus {
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/profile-bg.png');
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectlaundry {
+  position: relative;
+  background-image: url('../img/londrymain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectforelace {
+  position: relative;
+  background-image: url('../img/forelacemain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectresidental {
+  position: relative;
+  background-image: url('../img/residentalmain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectecology {
+  position: relative;
+  background-image: url('../img/ecologymain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
 .top-sectsenitization {
   position: relative;
   background-image: url('../img/senitization.png');
@@ -141,6 +218,50 @@
 .top-secthoder {
   position: relative;
   background-image: url('../img/hodermain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectBiohazard  {
+  position: relative;
+  background-image: url('../img/Biohazardmain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-secthazmat  {
+  position: relative;
+  background-image: url('../img/hazmatmain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectjunk {
+  position: relative;
+  background-image: url('../img/junkmain.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.top-sectPrivacy {
+  position: relative;
+  background-image: url('../img/privacymain.png');
   background-position: 84%;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -245,7 +366,9 @@
     background-color: var(--primary-color);
     color: #fff;  
 }
-
+.my-card-agained{
+  background-color: #161817 !important;
+}
 .quote-section{
     background-image: url(../img/qoutesecmask.png);
     background-position: center;
@@ -480,4 +603,522 @@ text-align: center;
   .service-container-row .slick-prev {
     left: 82%;
   }
+}
+/* about page css */
+.abouttext{
+  font-family: Futura Md BT;
+font-size: 18px;
+font-weight: 400;
+line-height: 23.97px;
+text-align: left;
+color: #FFFFFFDE;
+}
+.Aboutheade{
+  color: #FFFFFFDE;
+font-family: Futura Hv BT;
+font-size: 25px;
+font-weight: 400;
+line-height: 35.96px;
+text-align: left;
+
+}
+.Aboutpara{
+  font-family: Futura;
+font-size: 15px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.05em;
+text-align: left;
+color: #FFFFFF91;
+}
+.establiH{
+  font-family: Futura Md BT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color:#FFFFFFDE ;
+}
+.wHytext{
+font-family: Futura Hv BT;
+font-size: 25px;
+font-weight: 400;
+line-height: 35.96px;
+text-align: center;
+color: #FFFFFFDE ;
+}
+/* privacy policy css */
+.PrivacyPtext{
+  color: #FFFFFFDE;
+  font-family: Futura Md BT;
+font-size: 18px;
+font-weight: 400;
+line-height: 50.71px;
+letter-spacing: 0.1em;
+}
+.LinedH{
+  background-color: black !important;
+  color: black;
+  height: 3px;
+}
+.PricvayPara{
+  font-family: Futura Md BT;
+font-size: 14px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFFDE;
+}
+.PolIcyhead{
+  font-family: Futura Md BT;
+font-size: 20px;
+font-weight: 700;
+line-height: 50.71px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFFDE;
+}
+.additonalText{
+  font-family: Futura Hv BT;
+font-size: 16px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFFDE;
+}
+.BaTcolor{
+  background-color: #161817 !important;
+  border-radius: 10px;
+}
+/* qoute css */
+
+.bg-header{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(../img/servicebg.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  height: 100vh;
+}
+.main-QoUte{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}  
+.main-QoUte h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 69px;
+  letter-spacing: 10%;
+}
+.Qoute-heading{
+  font-family: Futura Hv BT;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35.96px;
+  color: #FFFFFF;
+}
+.para-qoute{
+  font-family: Futura Md BT;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.77px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:rgba(255, 255, 255, 0.57);
+}
+.qoute-btn{
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align:center;
+  color: #FFFFFF;
+}
+.bg-sec{
+  background-color:rgba(30, 32, 31, 1);
+}
+.form-para{
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+  color:rgba(255, 255, 255, 0.57);
+
+}
+.FullBodyc{
+  background-color:#161817 !important;
+}
+.table td{
+  background-color: #1E201F !important;
+}
+.table-bordered{
+  border:1px solid #575757 !important;
+}
+.form-check{
+  font-family: Futura;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.78px;
+  color: rgba(255, 255, 255, 0.57);
+}
+.highlight {
+  background-color:  #007bff !important;
+}
+.form-check-input{
+  background-color: #1E201F;
+  border-color: #575757;
+}
+.label-text{
+  font-family: Futura Md BT;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.97px;
+  color: #FFFFFF;
+}
+.form-select{
+  background-color: #161817;
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.18px;
+  color:rgba(255, 255, 255, 0.57);
+}     
+.form-select option{
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.18px;
+}
+.Qote-input{
+  background-color: #161817 !important;
+ 
+}
+.form textarea::placeholder,.form input::placeholder{
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.18px;
+  color:rgba(255, 255, 255, 0.57);
+}
+
+@media (max-width:576px){
+  .main-QoUte h1{
+      font-size: 30px;
+  }
+  .bg-header{
+      height: 70vh;
+  }
+  .main-QoUte{
+      height: 50vh;
+  }
+}    
+/* OUR SUBSCRIPTION CSS */
+.FEATURed{
+  font-family: Futura Hv BT;
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #FFFFFFDE;
+}
+.Subideal{
+  font-family: Futura Hv BT;
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: #FFFFFF;
+}
+.Subidealed{
+  font-family: Futura Hv BT;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #FFFFFF;
+}
+.SubranGe{
+  font-family: Futura Md BT;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+.SuBserviux{
+  font-family: Futura Md BT;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+
+.Bg_rowColr{
+  background: linear-gradient(141.89deg, #8191EF 0%, #E431DA 100%);
+border-radius: 15px;
+}
+.BorderLEFT{
+  border-left: 1px solid white ;
+}
+@media(max-width:992px){
+  .BorderLEFT{
+    border-left: none;
+  }
+ 
+}
+@media(max-width:400px){
+  .SuBserviux{
+    font-size: 14px;
+  }
+  .Subideal{
+  font-size: 18px;
+  }
+  .SubranGe{
+  font-size: 16px;
+  }
+  .FEATURed{
+    font-family: Futura Hv BT;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFFDE;
+  }
+}
+.SubBTntext{
+  font-family: Futura Md BT;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+background-color: #fff7ef !important;
+letter-spacing: 0.05em;
+text-align: center;
+color: #00000091;
+}
+.dBGcolor{
+  background: linear-gradient(141.89deg, #F548C1 0%, #FEDF79 100%);
+border-radius: 15px;
+}
+.dBGcolorEd{
+  border-radius: 15px;
+  background: linear-gradient(141.89deg, #8271E3 0%, #46ED8F 100%);
+
+}
+.dBGcrled{
+  background: linear-gradient(143.1deg, #7D95EF 0%, #E239DB 102.57%);
+border-radius: 15px;
+}
+.Row-section1{
+  background-color: #20BFF1;
+  border-radius: 10px;
+}
+.Lisubn{
+  height: 1px;
+  width: 100%;
+  background-color: #D3D3D3;
+}
+.row-subsection2{
+  background-color: #161817;
+  border-radius: 10px;
+  height: 100% !important;
+}
+.Row-Subtext{
+  font-family: Futura Md BT;
+font-size: 18px;
+font-weight: 400;
+line-height: 23.97px;
+text-align: left;
+color:#FFFFFFDE ;
+}
+.Row-ParaSub{
+  font-family: Futura;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.05em;
+text-align: left;
+color: #FFFFFF91;
+}
+.Row-section3{
+  background-color: #B21490;
+  border-radius: 10px;
+}
+/* collaboration page css */
+.bg-headerEd{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/profile-bg.png');
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+/*  */
+.collab-heading{
+  font-family: Futura Hv BT;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 59.94px;
+  color: rgba(255, 255, 255, 0.87);
+} 
+.sub-heading{
+  font-family: Futura Hv BT;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38.36px;
+  color: rgba(255, 255, 255, 0.87);
+}
+.collab-para{
+  font-family: Futura Md BT;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.57);
+}
+.collab-paraed{
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #3D3D3D;
+}
+.btn-collab{
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 1);
+}
+.section-heading{
+  font-family: Futura Hv BT;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 43.15px;
+  color: rgba(255, 255, 255, 0.87);
+}
+@media(max-width:400px){
+  .section-heading{
+      font-family: Futura Hv BT;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 43.15px;
+      color: rgba(255, 255, 255, 0.87);
+  }
+}
+.mold-bg{
+  background: rgba(22, 24, 23, 1) !important;
+}
+.manage-heading{
+  font-family: Futura Hv BT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.77px;
+  color: rgba(255, 255, 255, 0.87);
+}
+.manage-heading span{
+  font-family: Futura Hv BT;
+  font-size: 30px;
+  font-weight: 600;
+  
+}
+.bg-faq{
+  background: rgba(30, 32, 31, 1);
+  border-radius: 5px;
+}
+.accordion-button::after{
+  background-image: url('../img/icongreater.svg') !important;
+  color: #FFFFFF !important;
+  width: 10px !important;
+  height: 10px !important;
+ padding-block: 10px;
+  background-size: 10px !important;
+  /* transform: rotate(-90deg); */
+} 
+.accordion-button:not(.collapsed)::after{
+  color: white !important;
+  /* transform: rotate(180deg) !important; */
+}
+@media(max-width:576px){
+  .bg-headerEd{
+    height: auto;
+}
+  .collab-heading{
+      font-size: 33px;
+      line-height: 36px;
+  }
+}
+.BBTNTEXxt{
+font-family: Futura Md BT;
+font-size: 15px;
+font-weight: 400;
+line-height: 21.58px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+/* Cleaning project finance css */
+.top-sectcleaning  {
+  position: relative;
+  background-image: url('../img/claning-prox.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.CleaningHead{
+font-family: Futura Hv BT;
+font-size: 26px;
+font-weight: 400;
+line-height: 30px;
+color: #FFFFFF;
+}
+.Clean-text{
+font-family: Futura Md BT;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+/* Affiliate css */
+.BTNborder{
+  border: 1px solid #0dcaf0;
+}
+.BTNborder:hover{
+  border: 1px solid #0dcaf0;
+}
+.AffilText{
+  font-family: Futura Md BT;
+font-size: 45px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFFDE;
+}
+.AfliatePara{
+font-family: Futura Md BT;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF91;
 }
