@@ -439,6 +439,15 @@ body {
     border-radius: 12px;
     background-color: rgba(175, 54, 129, 0.479);
 }
+.QbtnNa{
+    font-family: Futura Md BT;
+font-size: 16px;
+font-weight: 400;
+/* letter-spacing: 10%; */
+line-height: 20px;
+text-align: left;
+color: white;
+}
 .BBTNTEXXT {
     font-family: Futura Md BT;
     font-size: 14px;
@@ -480,7 +489,7 @@ body {
     background-color: #20BFF1 !important;  
     
 }
-.bg-grey{
+.bg-uperspace{
     background-color: #20BFF1 !important;
 
 }
@@ -576,7 +585,13 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #18BEF0;
-    ;
+    cursor: pointer;
+    height: 110px;
+}
+.communicat_contact a {
+    text-decoration: none;
+    color: #000000DE;
+    background-color: white;
     cursor: pointer;
     height: 110px;
 }
@@ -609,6 +624,26 @@ body {
     font-weight: 300;
     line-height: 23px;
    color:#FFFFFFDE ;
+    
+}
+.PNgicons{
+    background-color:#18BEF0 ;
+    border-radius: 10px;
+}
+.contact_card_Title {
+    font-family: Futura  Hv BT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    color:#000000DE ;  
+}
+
+.Contact_card_Text {
+    font-family: Futura;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+   color:#000000DE ;
     
 }
 
@@ -671,4 +706,144 @@ font-weight: 400;
 line-height: 30px;
 text-align: center;
 color: #FFFFFFDE;
+}
+/* profile page css */
+
+.bagcolor{
+    background-color:#1E201F !important;
+}
+.bg-header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/profile-bg.png') no-repeat center;;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.profile{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}  
+.profile h1{
+    font-family: Futura Hv BT;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFFDE;
+    line-height: 69px;
+    letter-spacing: 10%;
+}
+.profile-img{
+    position: absolute;
+    top: -100%;
+    left: 38%;
+}
+.profile-icon{
+    position: absolute;
+    top: 73%;
+    left:76%;
+    font-size: 24px;
+    background: #9947E280;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+.input-icon{
+    position: absolute;
+    top: 58%;
+    left: 92%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 10px;
+}
+.form-head{
+    font-family: Futura Hv BT;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFDE;
+
+}
+.form-label{
+    font-family: Futura Md BT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFFDE;
+}
+.formed input{
+    background-color: #000000 !important;
+}
+.form input::placeholder{
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF91;
+}
+.formed input{
+    /* background-color: #000000 !important; */
+}
+.formed textarea::placeholder, .formed input::placeholder{
+    font-family: Futura Md BT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF91;
+}
+
+#dob{
+    color: #FFFFFF91;
+}
+.birth:hover{
+   /* display: none; */
+}
+.form-select{
+    background-color: #000000;
+    color:#FFFFFF91;
+}
+.form-text{
+    font-family: Futura Md BT;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF91;
+}
+@media(max-width:768px){
+    .profile-img{
+        left: 27%;
+    }
+}
+@media(max-width:500px){
+    .profile-img{
+        left: 20%;
+    }
+}
+@media(max-width:400px){
+    .bg-header{
+        height: 80vh;
+    }
+    .profile{
+        height: 60vh;
+    }
+    .profile-img img{
+        width: 160px;
+    }
+    .profile-img{
+        left: 21%;
+        top: -87%;
+    }
+    .input-icon{
+        left: 85%;
+    }
 }
