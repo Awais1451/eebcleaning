@@ -707,6 +707,206 @@ line-height: 30px;
 text-align: center;
 color: #FFFFFFDE;
 }
+
+
+/* sign in page style  */
+
+
+    .nav-anchor {
+        white-space: nowrap;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .anchor-signUpBtn {
+        color: #775da6;
+    }
+
+    .right-panel {
+        background-color: #161817;
+    }
+
+    .my-forum-card {
+        background-color: #1e201f;
+        width: 100%;
+        height: fit-content;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    @media (min-width:768px) {
+        .my-forum-card {
+            width: 100%;
+        }
+    }
+
+    @media (min-width:992px) {
+        .my-forum-card {
+            width: 55% !important;
+            /* margin-top: 20px !important; */
+        }
+    }
+
+    .my-formInputs {
+        background-color: #161817;
+        border: #161817;
+        padding-block: 10px;
+
+
+    }
+
+    .my-formInputs:focus {
+        background-color: #161817;
+        border: #161817;
+        padding-block: 10px;
+        color: #fff;
+
+
+    }
+
+    .my-formInputs::placeholder {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .forgot-password a {
+        color: #775da6 !important;
+        font-size: 14px;
+    }
+
+    .my-sign-inBtn {
+        background-color: #1e7eb7;
+        color: #fff;
+        width: 100%;
+    }
+    .my-sign-inBtn:hover{
+        background-color: #1e7eb7;
+        color: #fff;
+
+    }
+
+    .or-and-lines {
+        position: relative;
+    }
+
+    .or-and-lines::before {
+        position: absolute;
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: #fff;
+        left: 5px;
+        bottom: 8px;
+    }
+
+    .or-and-lines::after {
+        position: absolute;
+        content: "";
+        width: 40%;
+        height: 1px;
+        background-color: #fff;
+        right: 5px;
+        bottom: 8px;
+    }
+
+    .mygoogle-btn {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #161817;
+        width: 100%;
+
+    }
+
+    .mygoogle-btn:hover {
+        background-color: #161817;
+    }
+
+    .left-panel-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .privacyandterms {
+        color: #775da6;
+        text-decoration: none;
+    }
+    .footer-text{
+        font-size: 14px;
+    }
+
+    /* sign up styling */
+    .pass-strength-detect{
+        width: 100%;
+        height: 3px;
+        background-color: #18BEF0;
+        border-radius: 3px;
+        margin-block: 10px;
+    }
+    .my-password-input{
+        position: relative !important;
+    }
+    .password-hide-svg{
+        position: absolute;
+        right: 20px ;
+        bottom: 10px;
+
+    }
+    .password-hide-svg svg{
+        cursor: pointer;
+    }
+    .input{
+        color: #fff !important;
+    }
+    
+    /* Hide the default checkbox */
+.form-below-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 22px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin: 5px 10px 0 0;
+}
+
+/* Custom design for the checkbox */
+.form-below-checkbox:checked {
+    background-color: #775da6;
+    border-color: #775da6;
+}
+
+/* Custom checkmark */
+.form-below-checkbox:checked::before {
+    content: '\2713'; /* Checkmark Unicode character */
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #fff; /* Color of the checkmark */
+    text-align: center;
+    line-height: 16px;
+}
+.terms-checkbox{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* forgot password style  */
+.forgot-pass-p{
+    color: #5a5a5a;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.just-remeber-text{
+    color: #9e9f9f; 
+    font-weight: 600;
+    font-size: 15px;
+}
+.just-remeber-text a{
+    font-weight: 600;
+=======
 /* profile page css */
 
 .bagcolor{
