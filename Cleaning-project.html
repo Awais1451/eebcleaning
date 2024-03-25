@@ -111,6 +111,7 @@
         </div>
         <div class="container  py-3 ">
             <h2 class="CleaningHead py-2 text-center ">Most popular Packages </h2>
+            <div class="chart" id="chart"></div>
         </div>
         <div class="container-fluid  py-3 ">
             <div class="container ">
@@ -237,8 +238,8 @@
                     <hr class="Hrlined">
                 </div>
                 <div class="row p-0 m-0 ">
-                    <p class="text-center footer-para py-4 ">Copyright 1978 - 2024 | EEB Cleaning Services | All Right
-                        Reserved</p>
+                                        <p class="text-center footer-para py-4 ">Copyright 1978 - 2024    |    EEB Cleaning Services NY Inc   |    All Right Reserved</p>
+
                 </div>
             </div>
         </div>
@@ -253,6 +254,97 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="./catagory.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+    <script>
+        var options = {
+          series: [{
+            name: "<span style='color: #FFFFFFDE; font-weight: 500; font-size: 16px' >PLATINUM SUBSCRIPTION <br/> SERVICE: $380.00</span>",
+            data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 0],
+          },
+          {
+            name: "<span style='color: #FFFFFFDE; font-weight: 500; font-size: 16px' >PLATINUM SUBSCRIPTION <br/> SERVICE: $780.00</span>",
+            data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 37]
+          }],
+          chart: {
+            height: 350,
+            type: 'line',
+            zoom: {
+              enabled: false
+            },
+          },
+          dataLabels: {
+            enabled: false
+          },
+          legend: {
+            position: 'top',
+            horizontalAlign: 'left',
+            offsetY: 10,
+            offsetX: -20,
+            itemMargin: {
+              horizontal: 50,
+              vertical: 35,
+            },
+          },
+          markers: {
+            size: 0,
+            hover: {
+              sizeOffset: 6
+            }
+          },
+          xaxis: {
+            categories: ['0', '1 ', '2 ', '3 ', '4 ', '5 ', '6 ', '7 ', '8', '9'],
+            labels: {
+              style: {
+                colors: '#FFFFFF' // Set color for x-axis labels
+              }
+            }
+          },
+          yaxis: {
+            labels: {
+              style: {
+                colors: '#FFFFFF' // Set color for y-axis labels
+              }
+            }
+          },
+          tooltip: {
+            y: [
+              {
+                title: {
+                  formatter: function (val) {
+                    return val + " (mins)"
+                  }
+                }
+              },
+              {
+                title: {
+                  formatter: function (val) {
+                    return val + " "
+                  }
+                }
+              },
+              {
+                title: {
+                  formatter: function (val) {
+                    return val;
+                  }
+                }
+              }
+            ]
+          },
+          grid: {
+            borderColor: '#f1f1f1',
+            show: false
+          },
+          colors: ['#bcf685', '#da6ab4']
+        };
+    
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    
+    
+      </script>
 </body>
 
 </html>

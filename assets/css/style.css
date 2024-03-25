@@ -626,6 +626,22 @@ color: white;
    color:#FFFFFFDE ;
     
 }
+.Contact_card_TEXT {
+    font-family: Futura;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+   color:#FFFFFFDE ;  
+}
+@media(max-width:362px){
+    .Contact_card_TEXT {
+        font-family: Futura;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 23px;
+       color:#FFFFFFDE ;  
+    }
+}
 .PNgicons{
     background-color:#18BEF0 ;
     border-radius: 10px;
@@ -906,7 +922,8 @@ color: #FFFFFFDE;
 }
 .just-remeber-text a{
     font-weight: 600;
-=======
+}
+
 /* profile page css */
 
 .bagcolor{
@@ -1047,3 +1064,4 @@ color: #FFFFFFDE;
         left: 85%;
     }
 }
+/* donation page css */

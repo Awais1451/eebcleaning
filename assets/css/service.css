@@ -1,41 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --primary-color: #20bff1;
-    --secondary-color: #e2e2e2;
-    --primary-bg-color: #161817;
-    --secondary-bg-color: #1e201f;
-    
-}
-@font-face {
+:root {
+  --primary-color: #20bff1;
+  --secondary-color: #e2e2e2;
+  --primary-bg-color: #161817;
+  --secondary-bg-color: #1e201f;
 
-    font-family: "Futura HV BT", sans-serif ;
-    src: url(../fonts/FutuHv.ttf) ;
-
-    font-family: 'Futura Md BT';
-    src: url('../Futura-Md-BT-Font/FutuBd.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FutuBdIt.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FutuMd.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FutuMdIt.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FuturaBoldBT.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FuturaBoldItalicBT.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FuturaMediumBT.ttf') format('ttf'),
-        url('../Futura-Md-BT-Font/FuturaMediumItalicBT.ttf') format('ttf'),
-
-        /* Add more src declarations for other font formats if necessary */
 }
 
 @font-face {
-    font-family: 'Futura Hv BT';
-    src: url('../Futura-Hv-BT/FutuHv.ttf') format('ttf'),
-        url('../Futura-Hv-BT/FutuHvIt.ttf') format('ttf'),
-        url('../Futura-Hv-BT/FuturaHeavyBT.ttf') format('ttf'),
-        url('../Futura-Hv-BT/FuturaHeavyItalicBT.ttf') format('ttf'),
-        url('../Futura-Hv-BT/futurahi.ttf') format('ttf'),
+
+  font-family: "Futura HV BT", sans-serif;
+  src: url(../fonts/FutuHv.ttf);
+
+  font-family: 'Futura Md BT';
+  src: url('../Futura-Md-BT-Font/FutuBd.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FutuBdIt.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FutuMd.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FutuMdIt.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FuturaBoldBT.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FuturaBoldItalicBT.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FuturaMediumBT.ttf') format('ttf'),
+    url('../Futura-Md-BT-Font/FuturaMediumItalicBT.ttf') format('ttf'),
+
+    /* Add more src declarations for other font formats if necessary */
+}
+
+@font-face {
+  font-family: 'Futura Hv BT';
+  src: url('../Futura-Hv-BT/FutuHv.ttf') format('ttf'),
+    url('../Futura-Hv-BT/FutuHvIt.ttf') format('ttf'),
+    url('../Futura-Hv-BT/FuturaHeavyBT.ttf') format('ttf'),
+    url('../Futura-Hv-BT/FuturaHeavyItalicBT.ttf') format('ttf'),
+    url('../Futura-Hv-BT/futurahi.ttf') format('ttf'),
 
 
 
@@ -44,67 +45,69 @@
 /* navbar */
 
 
-.nav-text a{
-    font-family: Futura;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 10%;
-    line-height: 24px;
-    color: #a3a6a7;
-    background: transparent !important;  
+.nav-text a {
+  font-family: Futura;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 10%;
+  line-height: 24px;
+  color: #a3a6a7;
+  background: transparent !important;
 }
 
-.nav-item .nav-link.active{
-    color: #fff ;
+.nav-item .nav-link.active {
+  color: #fff;
 }
-.my-nav{
-    z-index: 3000 !important;
+
+.my-nav {
+  z-index: 3000 !important;
 }
-@media (max-width:992px){
-    .my-nav{
-        background: var(--secondary-bg-color);
-    }
+
+@media (max-width:992px) {
+  .my-nav {
+    background: var(--secondary-bg-color);
+  }
 }
 
 
 /* Style for the top section */
 .top-section {
-    position: relative;
-    background-image: url(../img/servicemainpic.png);
-    background-position: 84%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    
-  }
+  position: relative;
+  background-image: url(../img/servicemainpic.png);
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 
-  
-  /* Style for the gradient mask */
-  .top-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
-    pointer-events: none; 
+}
 
-  }
-    
 
-  .top-heading{
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    z-index: 1;
-    font-weight: 700;
-    color: var(--secondary-color);
-    font-family: "Futura HV BT", sans-serif ;
-  }
+/* Style for the gradient mask */
+.top-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+
+}
+
+
+.top-heading {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-family: "Futura HV BT", sans-serif;
+}
 
 /* Style for the top section */
 .card {
@@ -113,9 +116,11 @@
   border-radius: 12px !important;
   height: 100% !important;
 }
-.extrapaded{
-  padding-bottom: 2.6rem ;
+
+.extrapaded {
+  padding-bottom: 2.6rem;
 }
+
 .top-sectcomer {
   position: relative;
   background-image: url('../img/comercl.png');
@@ -125,8 +130,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectstorage {
   position: relative;
   background-image: url('../img/storagemain.png');
@@ -136,8 +142,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectContact {
   position: relative;
   background-image: url('../img/contact-main.png');
@@ -147,19 +154,21 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectaboutus {
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/profile-bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/profile-bg.png');
   background-position: 100% 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectlaundry {
   position: relative;
   background-image: url('../img/londrymain.png');
@@ -169,8 +178,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectforelace {
   position: relative;
   background-image: url('../img/forelacemain.png');
@@ -180,8 +190,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectresidental {
   position: relative;
   background-image: url('../img/residentalmain.png');
@@ -191,8 +202,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectecology {
   position: relative;
   background-image: url('../img/ecologymain.png');
@@ -202,8 +214,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectsenitization {
   position: relative;
   background-image: url('../img/senitization.png');
@@ -213,8 +226,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-secthoder {
   position: relative;
   background-image: url('../img/hodermain.png');
@@ -224,9 +238,10 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
-.top-sectBiohazard  {
+
+.top-sectBiohazard {
   position: relative;
   background-image: url('../img/Biohazardmain.png');
   background-position: 84%;
@@ -235,9 +250,10 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
-.top-secthazmat  {
+
+.top-secthazmat {
   position: relative;
   background-image: url('../img/hazmatmain.png');
   background-position: 84%;
@@ -246,8 +262,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectjunk {
   position: relative;
   background-image: url('../img/junkmain.png');
@@ -257,8 +274,9 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 .top-sectPrivacy {
   position: relative;
   background-image: url('../img/privacymain.png');
@@ -268,273 +286,295 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 /* Style for the top section */
 .top-sectioned {
-    position: relative;
-    background-image: url('../img/mainoffice.png');
-    background-position: 84%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    
-  }
-    
+  position: relative;
+  background-image: url('../img/mainoffice.png');
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 
-  .top-heading{
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    z-index: 1;
-    font-weight: 700;
-    color: var(--secondary-color);
-    font-family: "Futura HV BT", sans-serif ;
-  }
+}
+
+
+.top-heading {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-family: "Futura HV BT", sans-serif;
+}
 
 /* Style for the top section */
 .top-sectionwall {
-    position: relative;
-    background-image: url(../img/wallsec1.png);
-    background-position: 84%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    
-  }
-  
-  /* Style for the gradient mask */
-  .top-sectionwall::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
-    pointer-events: none; 
+  position: relative;
+  background-image: url(../img/wallsec1.png);
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 
-  }
-    
-
-  .top-headingwall{
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    z-index: 1;
-    font-weight: 700;
-    color: var(--secondary-color);
-    font-family: "Futura HV BT", sans-serif ;
-  }
-
-  .most-popular-section{
-    background-color: var(--primary-bg-color);
-  }
-  .most-popular-heading{
-    color: var(--secondary-color);
-    font-family: "Futura HV BT" sans-serif;
-
-
-  }
-  .belowText-most-popular{
-    color: var(--secondary-color);
-    font-family: sans-serif;
-  }
-.my-custom-card{
-    background-color: var(--secondary-bg-color);
-    color: var(--secondary-color);
-    width: 100%;
-    border-radius: 15px;
 }
-.my-card-text{
-    font-size: 20px;
-    font-weight: 700;
+
+/* Style for the gradient mask */
+.top-sectionwall::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+
 }
-.my-card-overlay-btn{
-    align-self: center;
-    justify-self: center;
+
+
+.top-headingwall {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 1;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-family: "Futura HV BT", sans-serif;
 }
+
+.most-popular-section {
+  background-color: var(--primary-bg-color);
+}
+
+.most-popular-heading {
+  color: var(--secondary-color);
+  font-family: "Futura HV BT" sans-serif;
+
+
+}
+
+.belowText-most-popular {
+  color: var(--secondary-color);
+  font-family: sans-serif;
+}
+
+.my-custom-card {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
+  width: 100%;
+  border-radius: 15px;
+}
+
+.my-card-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.my-card-overlay-btn {
+  align-self: center;
+  justify-self: center;
+}
+
 .overlay-btn {
-    padding: 5px 35px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    background-color: var(--primary-color);
-    color: #fff;  
+  padding: 5px 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
-.my-card-agained{
+
+.my-card-agained {
   background-color: #161817 !important;
 }
-.quote-section{
-    background-image: url(../img/qoutesecmask.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    padding-block: 6rem;
-}
-.quotes-heading{
-    font-size: 35px;
-    color: #20bff1;
-    font-weight: 700;
-    font-family: "Futura HV BT", sans-serif ;
+
+.quote-section {
+  background-image: url(../img/qoutesecmask.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  padding-block: 6rem;
 }
 
-.quote-is-here{
-    font-size: 35px;
-    font-weight: 600;
-    color: #fff;
+.quotes-heading {
+  font-size: 35px;
+  color: #20bff1;
+  font-weight: 700;
+  font-family: "Futura HV BT", sans-serif;
 }
 
-.popular-categories-section{
-    background-color: var(--secondary-bg-color);
-
+.quote-is-here {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
 }
 
-.my-custom-card-below{
-    background-color: var(--primary-bg-color) !important;
+.popular-categories-section {
+  background-color: var(--secondary-bg-color);
 
 }
 
-.belowCards-overlay-btn{
-    
-    margin-top: -150px;
-    
-}
-.below-card-new-icon{
-    width: 80px;
-    height: 80px;
-    background-color: #9947e2;
-    padding: 20px;
-    border-radius: 50%;
+.my-custom-card-below {
+  background-color: var(--primary-bg-color) !important;
+
 }
 
-.below-cards-small{
-    font-weight: 600;
+.belowCards-overlay-btn {
+
+  margin-top: -150px;
+
 }
 
- 
+.below-card-new-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #9947e2;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.below-cards-small {
+  font-weight: 600;
+}
+
+
 
 /* *****************service page styling ******************** */
 
 
-.ecological-top-section{
-    position: relative;
-    background-image: url(../img/eco-main.png);
-    background-position: 84%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+.ecological-top-section {
+  position: relative;
+  background-image: url(../img/eco-main.png);
+  background-position: 84%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-  /* Style for the gradient mask */
-  .ecological-top-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
-    pointer-events: none; 
+/* Style for the gradient mask */
+.ecological-top-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
 
-  }
-  .ecological-second-section{
-    background-color: var(--secondary-bg-color);
-  }
-  .seeAll{
-    margin-bottom: 2rem;
-  }
-  
-  .seeall-btn{
-    padding-inline: 30px;
-    padding-block: 5px;
-    font-size: 12px;
-    border-radius: 5px;
-    border: none;
-    background-color: #20bff1;
-    color: #fff;
-    
-
-  }
-  .eco-popular-categories-section{
-    background-color: var(--primary-bg-color);
-  }
-  .eco-custom-card-below{
-    background-color: var(--secondary-bg-color);
-  }
-
-  .hardworking-sec{
-    background-color: var(--secondary-bg-color);
-  }
-
-.my-card-img{
-filter: brightness(70%);
--webkit-filter: brightness(70%);
 }
+
+.ecological-second-section {
+  background-color: var(--secondary-bg-color);
+}
+
+.seeAll {
+  margin-bottom: 2rem;
+}
+
+.seeall-btn {
+  padding-inline: 30px;
+  padding-block: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #20bff1;
+  color: #fff;
+
+
+}
+
+.eco-popular-categories-section {
+  background-color: var(--primary-bg-color);
+}
+
+.eco-custom-card-below {
+  background-color: var(--secondary-bg-color);
+}
+
+.hardworking-sec {
+  background-color: var(--secondary-bg-color);
+}
+
+.my-card-img {
+  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+}
+
 /* wall cleaning */
-.wallText{
-font-family: Futura Hv BT;
-font-size: 28px;
-font-weight: 400;
-line-height: 36px;
-text-align: left;
-color: #FFFFFFDE;
+.wallText {
+  font-family: Futura Hv BT;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #FFFFFFDE;
 }
-.wallpara{
-    font-family: Futura Md BT;
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-text-align: left;
-color: #FFFFFF91;
+
+.wallpara {
+  font-family: Futura Md BT;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #FFFFFF91;
 }
 
 
 /***** quotes section *****/
 .quotes-section {
   color: white;
-  background-image:   url('../img/qoutesecmask.png');
+  background-image: url('../img/qoutesecmask.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
   padding-block: 100px;
+
   .quotes-img {
     height: 50px;
   }
-  .quotes-container h1{
+
+  .quotes-container h1 {
     font-family: Futura Hv BT;
-font-size: 40px;
-font-style: italic;
-font-weight: 400;
-line-height: 40px;
-text-align: center;
-color: #20BFF1;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #20BFF1;
   }
-  .Quotespara{
-color: #FFFFFFDE;
-font-family: Futura Hv BT;
-font-size: 40px;
-font-style: italic;
-font-weight: 400;
-line-height: 50px;
-text-align: center;
+
+  .Quotespara {
+    color: #FFFFFFDE;
+    font-family: Futura Hv BT;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
 
   }
+
   .quotes-sub-container {
     position: relative;
     width: 100%;
     z-index: 100;
     opacity: 1;
   }
+
   .quotes-sub-container::before {
     content: "";
     position: absolute;
@@ -544,6 +584,7 @@ text-align: center;
     width: 43%;
     background-color: rgba(32, 191, 241, 1);
   }
+
   .quotes-sub-container::after {
     content: "";
     position: absolute;
@@ -553,7 +594,7 @@ text-align: center;
     width: 43%;
     background-color: rgba(32, 191, 241, 1);
   }
-  
+
   .line-display {
     width: 100%;
     height: 3.5px;
@@ -574,11 +615,13 @@ text-align: center;
   left: 0;
   left: 91%;
 }
+
 .service-container-row .slick-next {
   position: absolute;
   top: -19px;
   right: 4%;
 }
+
 .service-container-row .slick-list {
   /* margin-top: 30px; */
 }
@@ -589,397 +632,458 @@ text-align: center;
     left: 89%;
   }
 }
+
 @media (width<768px) {
   .service-container-row .slick-prev {
     left: 88%;
   }
 }
+
 @media (width<576px) {
   .service-container-row .slick-prev {
     left: 86%;
   }
 }
+
 @media (width<420px) {
   .service-container-row .slick-prev {
     left: 82%;
   }
 }
+
 /* about page css */
-.abouttext{
+.abouttext {
   font-family: Futura Md BT;
-font-size: 18px;
-font-weight: 400;
-line-height: 23.97px;
-text-align: left;
-color: #FFFFFFDE;
-}
-.Aboutheade{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.97px;
+  text-align: left;
   color: #FFFFFFDE;
-font-family: Futura Hv BT;
-font-size: 25px;
-font-weight: 400;
-line-height: 35.96px;
-text-align: left;
+}
+
+.Aboutheade {
+  color: #FFFFFFDE;
+  font-family: Futura Hv BT;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35.96px;
+  text-align: left;
 
 }
-.Aboutpara{
+
+.Aboutpara {
   font-family: Futura;
-font-size: 15px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0.05em;
-text-align: left;
-color: #FFFFFF91;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #FFFFFF91;
 }
-.establiH{
+
+.establiH {
   font-family: Futura Md BT;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.05em;
   text-align: left;
-  color:#FFFFFFDE ;
+  color: #FFFFFFDE;
 }
-.wHytext{
-font-family: Futura Hv BT;
-font-size: 25px;
-font-weight: 400;
-line-height: 35.96px;
-text-align: center;
-color: #FFFFFFDE ;
+
+.wHytext {
+  font-family: Futura Hv BT;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35.96px;
+  text-align: center;
+  color: #FFFFFFDE;
 }
+
 /* privacy policy css */
-.PrivacyPtext{
+.PrivacyPtext {
   color: #FFFFFFDE;
   font-family: Futura Md BT;
-font-size: 18px;
-font-weight: 400;
-line-height: 50.71px;
-letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50.71px;
+  letter-spacing: 0.1em;
 }
-.LinedH{
+
+.LinedH {
   background-color: black !important;
   color: black;
   height: 3px;
 }
-.PricvayPara{
+
+.PricvayPara {
   font-family: Futura Md BT;
-font-size: 14px;
-font-weight: 400;
-line-height: 38px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFFDE;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFFDE;
 }
-.PolIcyhead{
+
+.PolIcyhead {
   font-family: Futura Md BT;
-font-size: 20px;
-font-weight: 700;
-line-height: 50.71px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFFDE;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50.71px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFFDE;
 }
-.additonalText{
+
+.additonalText {
   font-family: Futura Hv BT;
-font-size: 16px;
-font-weight: 400;
-line-height: 38px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFFDE;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFFDE;
 }
-.BaTcolor{
+
+.BaTcolor {
   background-color: #161817 !important;
   border-radius: 10px;
 }
+
 /* qoute css */
 
-.bg-header{
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(../img/servicebg.png) no-repeat center;
+.bg-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/servicebg.png) no-repeat center;
   background-size: cover;
   width: 100%;
   background-position: center;
   height: 100vh;
 }
-.main-QoUte{
+
+.main-QoUte {
   height: 90vh;
   display: flex;
   align-items: center;
-}  
-.main-QoUte h1{
+}
+
+.main-QoUte h1 {
   font-size: 40px;
   font-weight: 700;
   color: #FFFFFF;
   line-height: 69px;
   letter-spacing: 10%;
 }
-.Qoute-heading{
+
+.Qoute-heading {
   font-family: Futura Hv BT;
   font-size: 30px;
   font-weight: 400;
   line-height: 35.96px;
   color: #FFFFFF;
 }
-.para-qoute{
+
+.para-qoute {
   font-family: Futura Md BT;
   font-size: 18px;
   font-weight: 400;
   line-height: 28.77px;
   letter-spacing: 0.1em;
   text-align: left;
-  color:rgba(255, 255, 255, 0.57);
+  color: rgba(255, 255, 255, 0.57);
 }
-.qoute-btn{
+
+.qoute-btn {
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.1em;
-  text-align:center;
+  text-align: center;
   color: #FFFFFF;
 }
-.bg-sec{
-  background-color:rgba(30, 32, 31, 1);
+
+.bg-sec {
+  background-color: rgba(30, 32, 31, 1);
 }
-.form-para{
+
+.form-para {
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
   line-height: 21.58px;
   letter-spacing: 0.1em;
-  color:rgba(255, 255, 255, 0.57);
+  color: rgba(255, 255, 255, 0.57);
 
 }
-.FullBodyc{
-  background-color:#161817 !important;
+
+.FullBodyc {
+  background-color: #161817 !important;
 }
-.table td{
+
+.table td {
   background-color: #1E201F !important;
 }
-.table-bordered{
-  border:1px solid #575757 !important;
+
+.table-bordered {
+  border: 1px solid #575757 !important;
 }
-.form-check{
+
+.form-check {
   font-family: Futura;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.78px;
   color: rgba(255, 255, 255, 0.57);
 }
+
 .highlight {
-  background-color:  #007bff !important;
+  background-color: #007bff !important;
 }
-.form-check-input{
+
+.form-check-input {
   background-color: #1E201F;
   border-color: #575757;
 }
-.label-text{
+
+.label-text {
   font-family: Futura Md BT;
   font-size: 20px;
   font-weight: 400;
   line-height: 23.97px;
   color: #FFFFFF;
 }
-.form-select{
+
+.form-select {
   background-color: #161817;
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.18px;
-  color:rgba(255, 255, 255, 0.57);
-}     
-.form-select option{
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.form-select option {
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.18px;
 }
-.Qote-input{
+
+.Qote-input {
   background-color: #161817 !important;
- 
+
 }
-.form textarea::placeholder,.form input::placeholder{
+
+.form textarea::placeholder,
+.form input::placeholder {
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.18px;
-  color:rgba(255, 255, 255, 0.57);
+  color: rgba(255, 255, 255, 0.57);
 }
 
-@media (max-width:576px){
-  .main-QoUte h1{
-      font-size: 30px;
+@media (max-width:576px) {
+  .main-QoUte h1 {
+    font-size: 30px;
   }
-  .bg-header{
-      height: 70vh;
+
+  .bg-header {
+    height: 70vh;
   }
-  .main-QoUte{
-      height: 50vh;
+
+  .main-QoUte {
+    height: 50vh;
   }
-}    
+}
+
 /* OUR SUBSCRIPTION CSS */
-.FEATURed{
+.FEATURed {
   font-family: Futura Hv BT;
-font-size: 25px;
-font-weight: 400;
-line-height: 30px;
-text-align: center;
-color: #FFFFFFDE;
-}
-.Subideal{
-  font-family: Futura Hv BT;
-font-size: 25px;
-font-weight: 400;
-line-height: 30px;
-text-align: left;
-color: #FFFFFF;
-}
-.Subidealed{
-  font-family: Futura Hv BT;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: left;
-color: #FFFFFF;
-}
-.SubranGe{
-  font-family: Futura Md BT;
-font-size: 18px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFF;
-}
-.SuBserviux{
-  font-family: Futura Md BT;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFF;
-}
-
-.Bg_rowColr{
-  background: linear-gradient(141.89deg, #8191EF 0%, #E431DA 100%);
-border-radius: 15px;
-}
-.BorderLEFT{
-  border-left: 1px solid white ;
-}
-@media(max-width:992px){
-  .BorderLEFT{
-    border-left: none;
-  }
- 
-}
-@media(max-width:400px){
-  .SuBserviux{
-    font-size: 14px;
-  }
-  .Subideal{
-  font-size: 18px;
-  }
-  .SubranGe{
-  font-size: 16px;
-  }
-  .FEATURed{
-    font-family: Futura Hv BT;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
   color: #FFFFFFDE;
+}
+
+.Subideal {
+  font-family: Futura Hv BT;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.Subidealed {
+  font-family: Futura Hv BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.SubranGe {
+  font-family: Futura Md BT;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.SuBserviux {
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.Bg_rowColr {
+  background: linear-gradient(141.89deg, #8191EF 0%, #E431DA 100%);
+  border-radius: 15px;
+}
+
+.BorderLEFT {
+  border-left: 1px solid white;
+}
+
+@media(max-width:992px) {
+  .BorderLEFT {
+    border-left: none;
+  }
+
+}
+
+@media(max-width:400px) {
+  .SuBserviux {
+    font-size: 14px;
+  }
+
+  .Subideal {
+    font-size: 18px;
+  }
+
+  .SubranGe {
+    font-size: 16px;
+  }
+
+  .FEATURed {
+    font-family: Futura Hv BT;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFFDE;
   }
 }
-.SubBTntext{
+
+.SubBTntext {
   font-family: Futura Md BT;
-font-size: 14px;
-font-weight: 400;
-line-height: 16px;
-background-color: #fff7ef !important;
-letter-spacing: 0.05em;
-text-align: center;
-color: #00000091;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: #fff7ef !important;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #00000091;
 }
-.dBGcolor{
+
+.dBGcolor {
   background: linear-gradient(141.89deg, #F548C1 0%, #FEDF79 100%);
-border-radius: 15px;
+  border-radius: 15px;
 }
-.dBGcolorEd{
+
+.dBGcolorEd {
   border-radius: 15px;
   background: linear-gradient(141.89deg, #8271E3 0%, #46ED8F 100%);
 
 }
-.dBGcrled{
+
+.dBGcrled {
   background: linear-gradient(143.1deg, #7D95EF 0%, #E239DB 102.57%);
-border-radius: 15px;
+  border-radius: 15px;
 }
-.Row-section1{
+
+.Row-section1 {
   background-color: #20BFF1;
   border-radius: 10px;
 }
-.Lisubn{
+
+.Lisubn {
   height: 1px;
   width: 100%;
   background-color: #D3D3D3;
 }
-.row-subsection2{
+
+.row-subsection2 {
   background-color: #161817;
   border-radius: 10px;
   height: 100% !important;
 }
-.Row-Subtext{
+
+.Row-Subtext {
   font-family: Futura Md BT;
-font-size: 18px;
-font-weight: 400;
-line-height: 23.97px;
-text-align: left;
-color:#FFFFFFDE ;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.97px;
+  text-align: left;
+  color: #FFFFFFDE;
 }
-.Row-ParaSub{
+
+.Row-ParaSub {
   font-family: Futura;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0.05em;
-text-align: left;
-color: #FFFFFF91;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #FFFFFF91;
 }
-.Row-section3{
+
+.Row-section3 {
   background-color: #B21490;
   border-radius: 10px;
 }
+
 /* collaboration page css */
-.bg-headerEd{
+.bg-headerEd {
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('../img/profile-bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/profile-bg.png');
   background-position: 100% 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+
 }
+
 /*  */
-.collab-heading{
+.collab-heading {
   font-family: Futura Hv BT;
   font-size: 44px;
   font-weight: 400;
   line-height: 59.94px;
   color: rgba(255, 255, 255, 0.87);
-} 
-.sub-heading{
+}
+
+.sub-heading {
   font-family: Futura Hv BT;
   font-size: 28px;
   font-weight: 400;
   line-height: 38.36px;
   color: rgba(255, 255, 255, 0.87);
 }
-.collab-para{
+
+.collab-para {
   font-family: Futura Md BT;
   font-size: 14px;
   font-weight: 400;
@@ -987,7 +1091,8 @@ color: #FFFFFF91;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.57);
 }
-.collab-paraed{
+
+.collab-paraed {
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
@@ -995,7 +1100,8 @@ color: #FFFFFF91;
   letter-spacing: 0.1em;
   color: #3D3D3D;
 }
-.btn-collab{
+
+.btn-collab {
   font-family: Futura Md BT;
   font-size: 16px;
   font-weight: 400;
@@ -1003,75 +1109,87 @@ color: #FFFFFF91;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 1);
 }
-.section-heading{
+
+.section-heading {
   font-family: Futura Hv BT;
   font-size: 30px;
   font-weight: 400;
   line-height: 43.15px;
   color: rgba(255, 255, 255, 0.87);
 }
-@media(max-width:400px){
-  .section-heading{
-      font-family: Futura Hv BT;
-      font-size: 25px;
-      font-weight: 400;
-      line-height: 43.15px;
-      color: rgba(255, 255, 255, 0.87);
+
+@media(max-width:400px) {
+  .section-heading {
+    font-family: Futura Hv BT;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 43.15px;
+    color: rgba(255, 255, 255, 0.87);
   }
 }
-.mold-bg{
+
+.mold-bg {
   background: rgba(22, 24, 23, 1) !important;
 }
-.manage-heading{
+
+.manage-heading {
   font-family: Futura Hv BT;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.77px;
   color: rgba(255, 255, 255, 0.87);
 }
-.manage-heading span{
+
+.manage-heading span {
   font-family: Futura Hv BT;
   font-size: 30px;
   font-weight: 600;
-  
+
 }
-.bg-faq{
+
+.bg-faq {
   background: rgba(30, 32, 31, 1);
   border-radius: 5px;
 }
-.accordion-button::after{
+
+.accordion-button::after {
   background-image: url('../img/icongreater.svg') !important;
   color: #FFFFFF !important;
   width: 10px !important;
   height: 10px !important;
- padding-block: 10px;
+  padding-block: 10px;
   background-size: 10px !important;
   /* transform: rotate(-90deg); */
-} 
-.accordion-button:not(.collapsed)::after{
+}
+
+.accordion-button:not(.collapsed)::after {
   color: white !important;
   /* transform: rotate(180deg) !important; */
 }
-@media(max-width:576px){
-  .bg-headerEd{
+
+@media(max-width:576px) {
+  .bg-headerEd {
     height: auto;
-}
-  .collab-heading{
-      font-size: 33px;
-      line-height: 36px;
+  }
+
+  .collab-heading {
+    font-size: 33px;
+    line-height: 36px;
   }
 }
-.BBTNTEXxt{
-font-family: Futura Md BT;
-font-size: 15px;
-font-weight: 400;
-line-height: 21.58px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFF;
+
+.BBTNTEXxt {
+  font-family: Futura Md BT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
 }
+
 /* Cleaning project finance css */
-.top-sectcleaning  {
+.top-sectcleaning {
   position: relative;
   background-image: url('../img/claning-prox.png');
   background-position: center;
@@ -1081,44 +1199,374 @@ color: #FFFFFF;
   width: 100%;
   height: 100vh;
 }
-.CleaningHead{
-font-family: Futura Hv BT;
-font-size: 26px;
-font-weight: 400;
-line-height: 30px;
-color: #FFFFFF;
+
+.apexcharts-menu-icon {
+  display: none;
 }
-.Clean-text{
-font-family: Futura Md BT;
-font-size: 15px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFF;
+
+.CleaningHead {
+  font-family: Futura Hv BT;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #FFFFFF;
 }
-/* Affiliate css */
-.BTNborder{
-  border: 1px solid #0dcaf0;
-}
-.BTNborder:hover{
-  border: 1px solid #0dcaf0;
-}
-.AffilText{
+
+.Clean-text {
   font-family: Futura Md BT;
-font-size: 45px;
-font-weight: 700;
-line-height: 60px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFFDE;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
 }
-.AfliatePara{
-font-family: Futura Md BT;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0.1em;
-text-align: left;
-color: #FFFFFF91;
+
+/* Affiliate css */
+.BTNborder {
+  border: 1px solid #0dcaf0;
+}
+
+.BTNborder:hover {
+  border: 1px solid #0dcaf0;
+}
+
+.AffilText {
+  font-family: Futura Md BT;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFFDE;
+}
+
+.AfliatePara {
+  font-family: Futura Md BT;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF91;
+}
+
+.Text-RD {
+  font-family: Futura Hv BT;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.77px;
+  text-align: left;
+  color: #FFFFFFDE;
+}
+
+.Catogry-parAD {
+  font-family: Futura Md BT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  /* text-align: left; */
+  color: #FFFFFF91;
+}
+
+.IMG-ovrloded {
+  margin-top: -10rem;
+}
+
+.afliate-mnbr {
+  font-family: Futura Hv BT;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 47.95px;
+  text-align: center;
+  color: #FFFFFFDE;
+}
+
+.J_text {
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.sub-head-text {
+  font-family: Futura Hv BT;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38.36px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media(max-width:345px) {
+  .sub-head-text {
+    font-size: 25px;
+  }
+}
+
+/* networking css */
+.cross-parat {
+  font-family: Futura Md BT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF91;
+}
+
+.cross-texth {
+  font-family: Futura Hv BT;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #FFFFFFDE;
+}
+
+.IMG-height {
+  height: 88%;
+}
+
+.donation {
+  background: rgba(22, 24, 23, 1) !important;
+}
+
+.bg-donation {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/donation-bg.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.donate3 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+/*Donation section  */
+.donation-heading {
+  font-family: Futura Hv BT;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 59.94px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.small-heading {
+  font-family: Futura Hv BT;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 35.36px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.donation-para {
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.donate-label {
+  font-family: Futura Md BT;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.77px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.donate-input {
+  background: rgba(0, 0, 0, 0.57);
+  font-family: Futura Md BT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+}
+
+.donate-input::placeholder {
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.form-select {
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.IMG_span {
+  position: absolute;
+  top: 64% !important;
+  left: 91% !important;
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.certificate {
+  background: rgba(30, 32, 31, 1);
+}
+
+.amount {
+  width: 100px;
+}
+
+.donate-btn {
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.18px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.87);
+  width: 70px;
+}
+
+.active>.page-link,
+.page-link.active {
+  padding: 0 !important;
+  color: var(--bs-pagination-active-color);
+  background-color: black !important;
+  border-color: var(--bs-pagination-active-border-color);
+}
+
+.paginations {
+  background-color: rgba(255, 255, 255, 0.87) !important;
+  height: 21px;
+  width: 70%;
+}
+
+.pagin {
+  border: 2px solid rgba(0, 0, 0, 0.57);
+  width: 20px;
+  height: 20px;
+}
+
+.pagination-text {
+  position: absolute;
+  left: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.pagination a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+  border: 2px solid rgba(0, 0, 0, 0.57);
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+.active {
+  background-image: url(../img/pagination.png );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  padding: 13px;
+  border: none;
+}
+
+.pagin-para {
+  font-family: Futura Md BT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.57);
+}
+
+.donate-card {
+  background: rgba(22, 24, 23, 1);
+}
+
+.donate-card-text {
+  font-family: Futura Md BT;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.58px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media(max-width:992px) {
+  .paginations {
+    width: 100%;
+  }
+
+  .pagination-text {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+}
+
+@media(max-width:576px) {
+  .donation-heading {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  .bg-donation {
+    height: 70vh;
+  }
+
+  .donate3 {
+    height: 50vh;
+  }
+
+  .pagination-text {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+
+  .pagin-para {
+    font-size: 10px;
+  }
+} 
+
+/* CSS */
+.paginations .page-item1 {
+  width: 33.33%;
+  background-color: #20bff1;
+  border: 1px solid #20bff1;
+} 
+
+.paginations .page-item1.active {
+  width: 33.33% !important;
+  /* Set width for active li element */
+}
+
+.paginations .page-item2 {
+  width: 66.66%;
+  background-color: #20bff1;
+  border: 1px solid #20bff1;
+}
+
+.paginations .page-item2.active {
+  width: 66.66% !important;
+  /* Set width for active li element */
+}
+
+.paginations .page-item3 {
+  width: 100%;
+  background-color: #20bff1;
+  border: 1px solid #20bff1;
+}
+
+.paginations .page-item3.active {
+  width: 100% !important;
+  /* Set width for active li element */
 }
