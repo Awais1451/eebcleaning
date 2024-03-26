@@ -479,7 +479,7 @@ color: white;
 }
 
 .container-bgimg {
-    background-color: #1e201f;
+    background-color: #1e201f !important;
 }
 
 /* .h-nav{
@@ -628,7 +628,7 @@ color: white;
 }
 .Contact_card_TEXT {
     font-family: Futura;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 23px;
    color:#FFFFFFDE ;  
@@ -636,7 +636,7 @@ color: white;
 @media(max-width:362px){
     .Contact_card_TEXT {
         font-family: Futura;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 23px;
        color:#FFFFFFDE ;  
@@ -995,7 +995,7 @@ color: #FFFFFFDE;
     color: #FFFFFFDE;
 }
 .formed input{
-    background-color: #000000 !important;
+    background-color: #000000 ;
 }
 .form input::placeholder{
     font-family: Futura Md BT;
