@@ -26,8 +26,38 @@
 
 body {
     background-color: #161817;
+    -webkit-animation: fixFont 1ms;
+    -moz-animation: fixFont 1ms;
+    animation: fixFont 1ms;
 
 }
+@-webkit-keyframes fixFont {
+    from {
+        font-family: 'Futura Md BT', 'Futura Hv BT', Futura, sans-serif;
+    }
+    to {
+        font-family: 'Futura Md BT', 'Futura Hv BT', Futura, sans-serif;
+    }
+}
+
+@-moz-keyframes fixFont {
+    from {
+        font-family: 'Futura Md BT', 'Futura Hv BT', Futura, sans-serif;
+    }
+    to {
+        font-family: 'Futura Md BT', 'Futura Hv BT', Futura, sans-serif;
+    }
+}
+
+@keyframes fixFont {
+    from {
+        font-family: 'Futura Md BT', 'Futura Hv BT', Futura, sans-serif;
+    }
+    to {
+        font-family: 'Futura Md BT', 'Futura Hv BT', Futura, sans-serif;
+    }
+}
+
 
 
 /* -------------------------- HEADER Start -------------------------- */
@@ -141,7 +171,6 @@ body {
 
 .carousel__img {
     height: 700px !important;
-    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -149,7 +178,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 20px;
+   
     /* box-shadow: -1px 1px 22px #375559; */
 }
 
@@ -252,12 +281,14 @@ body {
     font-family: Futura Hv BT;
     font-size: 30px;
     font-weight: 400;
-    line-height: 43px;
+    line-height: 37px;
     letter-spacing: 0em;
 
 
 }
-
+.Height-img{
+    height: 86% !important;
+}
 .EEB_TEXT {
     color: #20BFF1;
 }
@@ -270,8 +301,17 @@ body {
     line-height: 30px;
     letter-spacing: 0.05em;
     text-align: left;    
-
 }
+.PArAEEB {
+    color: #9e9f9f;
+    font-family: Futura Md BT;
+    font-size: 13px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    /* letter-spacing: 0.05em; */
+    text-align: left;    
+}
+
 
 .IMAGRSD {
     background: #20BFF1;
@@ -344,7 +384,7 @@ body {
     font-weight: 400;
     letter-spacing: 10%;
     line-height: 24px;
-    color: #a3a6a7;
+    color: #a3a6a7 !important;
     background: transparent !important;  
 }
 .mask-container {
@@ -374,7 +414,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.width-Over{
+    width: 30% !important;
+}
 .Section2rd {
     background-image: url('../img/seoch2.png');
     /* Replace 'your-image.jpg' with your image file */
